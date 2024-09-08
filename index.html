@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
-
-    <style>
-        *{
-            background-color: gray;
-            color:white;
-        }
-    </style>
 </head>
 <body>
-    <h1>Rock Paper Scissors Game</h1>
+
+   <div class="Title">
+    <h1 id="title">Welcome to <br> Rock Paper Scissors</h1>
+    <h1>Choose your weapon!</h1>
+   </div>
+    
+
+<div id="GameContainer">
+   
+    <div id="PlayerSelection">
+        <button id="rock" class="PlayerChoice">
+            <img src="./icons/rock.png">
+            <p class="ChoiceName">Rock</p>
+        </button>
+        <button id="paper" class="PlayerChoice">
+            <img src="./icons/paper.png">
+            <p class="ChoiceName">Paper</p>
+
+        </button>
+        <button id="scissor" class="PlayerChoice">
+            <img src="./icons/scissor.png">
+            <p class="ChoiceName">Scissor</p>
+
+        </button>
+    </div>
+
+    <div id="GameScore">
+        <h1 id="Score">Game Score</h1>
+        <p id="GameFeedback"></p>
+        <p id="PlayerScore"> </p>
+        <p id="ComputerScore"> </p>
+        <p id="Winner"></p>
+    </div>
+
+    <div id="Restart">
+        <button id="PlayAgain">Play Again!</button>
+    </div>
+
+
+</div>
+
+
 
 <script src="script-rps.js"></script>
 </body>
